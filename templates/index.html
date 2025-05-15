@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head><title>{{ config.title }}</title></head>
+  <body>
+    {% set name = "saba" -%}
+    <p>{{name}}</p>
+    <h1>{{ section.pages }}</h1>
+    {% for page in section.pages %}
+      <a href="">saba</a><br>
+    {% endfor %}
+    {% for page in section.pages %}
+      <a href="{{ page.permalink }}">{{ page.title }}</a><br>
+    {% endfor %}
+  </body>
+</html>
