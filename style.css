@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+main {
+    padding: 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between project items */
+}
+
+.project-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin-top: 0;
+    color: #007bff; /* Example link color */
+}
+
+.project-item p {
+    margin-bottom: 10px; /* Add some space below description */
+}
+
+.project-item .language {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+.project-item a {
+    display: inline-block; /* Make the link a block element */
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
