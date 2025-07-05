@@ -1,84 +1,153 @@
+:root {
+	--bios-blue: #0000AA;
+	--bios-white: #CCCCCC;
+	--bios-highlight: #FFFF55;
+	--bios-gray: #555555;
+}
+
 body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+	background-color: var(--bios-blue);
+	color: var(--bios-white);
+	font-family: 'Lucida Console', 'Courier New', monospace;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
 }
 
+#bios-container {
+	width: 95%;
+	max-width: 800px;
+	height: 90vh;
+	max-height: 600px;
+	border: 2px solid var(--bios-white);
+	box-shadow: inset 0 0 0 1px var(--bios-white);
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* --- HEADER --- */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+	text-align: center;
+	border-bottom: 2px solid var(--bios-white);
+	padding-bottom: 5px;
+	margin-bottom: 10px;
 }
-
 header h1 {
-    margin: 0;
+	font-size: 1em;
+	margin: 0;
+	font-weight: normal;
 }
-
 header p {
-    margin-top: 5px;
-    font-size: 0.9em;
+	font-size: 0.9em;
+	margin: 5px 0 0 0;
+	color: var(--bios-highlight);
 }
 
+/* --- MAIN CONTENT --- */
 main {
-    padding: 20px;
+	display: flex;
+	flex-grow: 1;
+	overflow: hidden;
 }
 
-#projects h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+.menu-column {
+	width: 35%;
+	padding-right: 15px;
+	border-right: 1px solid var(--bios-white);
 }
 
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between project items */
+.menu-column ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
-.project-item {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.menu-column li a {
+	display: block;
+	text-decoration: none;
+	color: var(--bios-white);
+	padding: 3px 5px;
 }
 
-.project-item h3 {
-    margin-top: 0;
-    color: #007bff; /* Example link color */
+.menu-column li a.active {
+	background-color: var(--bios-gray);
+	color: var(--bios-highlight);
 }
 
-.project-item p {
-    margin-bottom: 10px; /* Add some space below description */
+.content-column {
+	width: 65%;
+	padding-left: 15px;
+	position: relative;
 }
 
-.project-item .language {
-    font-style: italic;
-    font-size: 0.9em;
-    color: #666;
-    margin-bottom: 10px;
+.content-section {
+	display: none; /* Hidden by default */
 }
 
-
-.project-item a {
-    display: inline-block; /* Make the link a block element */
-    margin-top: 10px;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
+.content-section.active {
+	display: block; /* Shown when active */
 }
 
-.project-item a:hover {
-    text-decoration: underline;
+.content-section h2 {
+	font-size: 1em;
+	color: var(--bios-highlight);
+	margin-top: 0;
+	margin-bottom: 15px;
 }
 
+.content-section p {
+	margin-bottom: 10px;
+	line-height: 1.4;
+}
+
+.content-section .item {
+	margin-bottom: 15px;
+}
+
+.content-section .item-title {
+	color: var(--bios-white);
+}
+
+.content-section .item-value {
+	color: var(--bios-highlight);
+}
+
+.content-section a {
+	color: var(--bios-highlight);
+	text-decoration: underline;
+}
+
+/* Blinking Cursor */
+.cursor {
+	display: inline-block;
+	background-color: var(--bios-white);
+	width: 10px;
+	height: 1.2em;
+	animation: blink 1s step-end infinite;
+	vertical-align: bottom;
+}
+
+@keyframes blink {
+	from, to { background-color: transparent }
+	50% { background-color: var(--bios-white); }
+}
+
+/* --- FOOTER --- */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    margin-top: 20px;
+	border-top: 2px solid var(--bios-white);
+	padding-top: 5px;
+	margin-top: 10px;
+}
+footer p {
+	margin: 0;
+	font-size: 0.9em;
+}
+footer .key {
+	color: var(--bios-highlight);
+	font-weight: bold;
 }

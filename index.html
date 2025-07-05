@@ -3,100 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>skamiXD - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>0xSKAMI - Portfolio BIOS</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="index.js"></script>
 </head>
 <body>
 
-    <header>
-        <h1>skamiXD</h1>
-        <p>Developer Portfolio</p>
-    </header>
+    <div id="bios-container">
+        <header>
+            <h1>PORTFOL.IO - Main Setup Utility</h1>
+            <p>Copyright (C) 2024, 0xSKAMI Systems</p>
+        </header>
 
-    <main>
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-list">
+        <main>
+            <!-- Left Side Menu -->
+            <div class="menu-column">
+                <ul>
+                    <!-- The data-target attribute links to the ID of the content section -->
+                    <li><a href="#" data-target="about">► About Me</a></li>
+                    <li><a href="#" data-target="skills">► System Skills</a></li>
+                    <li><a href="#" data-target="projects">► Projects Archive</a></li>
+                    <li><a href="#" data-target="contact">► Contact Information</a></li>
+                </ul>
+            </div>
 
-                <!-- buxa -->
-                <div class="project-item">
-                    <h3>extinctatlas</h3>
-                    <p>website to explore animals liven in past and get information about them</p>
-                    <p class="language">Go, svelte</p>
-                    <a href="https://github.com/0xSKAMI/extinctatlas" target="_blank">View on GitHub</a>
-                </div>
-								
-                <!-- buxa -->
-                <div class="project-item">
-                    <h3>buxa</h3>
-                    <p>Buxa is a discord bot that records time that someone played some game, It then gives some statistics like what was most played game in week or some time period or who played most games</p>
-                    <p class="language">C#</p>
-                    <a href="https://github.com/skamiXD/buxa" target="_blank">View on GitHub</a>
-                </div>
+            <!-- Right Side Content -->
+            <div class="content-column">
 
-                <!-- snail -->
-                <div class="project-item">
-                    <h3>snail</h3>
-                    <p>cassic snake or snail game, idk remember but I like snails more</p>
-                    <p class="language">C</p>
-                    <a href="https://github.com/skamiXD/snail" target="_blank">View on GitHub</a>
-                </div>
-
-                <!-- Fosta -->
-                <div class="project-item">
-                    <h3>Fosta (Archived)</h3>
-                    <p>Archived project.</p>
-                    <p class="language">TypeScript</p>
-                    <a href="https://github.com/skamiXD/Fosta" target="_blank">View on GitHub</a>
+                <!-- ABOUT ME SECTION -->
+                <div id="about" class="content-section">
+                    <h2>[ About Me ]</h2>
+                    <p>
+                        Passionate developer with a love for creating efficient and elegant solutions. My background is in web development, but I'm always exploring new technologies and frameworks. This portfolio is a nod to my beginnings, tinkering with old computers.
+                        <span class="cursor"></span>
+                    </p>
+                    <div class="item">
+                        <span class="item-title">Location.......:</span>
+                        <span class="item-value"> Planet Earth</span>
+                    </div>
+                    <div class="item">
+                        <span class="item-title">Status.........:</span>
+                        <span class="item-value"> Available for Hire</span>
+                    </div>
                 </div>
 
-                <!-- Chatter -->
-                <div class="project-item">
-                    <h3>Chatter</h3>
-                    <p>PyChat is a beginner-friendly project demonstrating how to build a chat application using Python, PyQt5 for the GUI, and MongoDB for data persistence. It's a great starting point for learning about…</p>
-                    <p class="language">Python</p>
-                    <a href="https://github.com/skamiXD/Chatter" target="_blank">View on GitHub</a>
+                <!-- SKILLS SECTION -->
+                <div id="skills" class="content-section">
+                    <h2>[ System Skills ]</h2>
+                    <p>Core competencies and loaded drivers:</p>
+                    <div class="item">
+                        <span class="item-title">Languages......:</span>
+                        <span class="item-value"> JavaScript, Python, C#, GO, HTML/CSS (some exp with C and assembly)</span>
+                    </div>
+                     <div class="item">
+                        <span class="item-title">Frameworks.....:</span>
+                        <span class="item-value"> React, Node.js, svelte</span>
+                    </div>
+                     <div class="item">
+                        <span class="item-title">Databases......:</span>
+                        <span class="item-value"> PostgreSQL, MongoDB, prisma</span>
+                    </div>
+                     <div class="item">
+                        <span class="item-title">Tools..........:</span>
+                        <span class="item-value"> Git, Docker, Webpack, Gitlab CI/CD</span>
+                    </div>
                 </div>
 
-                <!-- calculator -->
-                <div class="project-item">
-                    <h3>calculator</h3>
-                    <p>this is just calculator app, i am still begginer of PyQt5 and i am trying to make as much projects as possible</p>
-                    <p class="language">Python</p>
-                    <a href="https://github.com/skamiXD/calculator" target="_blank">View on GitHub</a>
+                <!-- PROJECTS SECTION -->
+                <div id="projects" class="content-section">
+                    <h2>[ Projects Archive ]</h2>
+                    <div class="item">
+                        <span class="item-title">This Portfolio.:</span>
+                        <span class="item-value"> A retro BIOS-themed portfolio.</span>
+                    </div>
+                     <div class="item">
+                        <span class="item-title">GitHub Repos...:</span>
+                        <span class="item-value"> My primary code archive. <a href="https://github.com/0xSKAMI?tab=repositories" target="_blank">[View]</a></span>
+                    </div>
+                     <div class="item">
+                        <span class="item-title">Buxa......:</span>
+                        <span class="item-value">Discord bot that gives you statistics based on steam account. <a href="https://github.com/0xSKAMI/buxa" target="_blank">project</a></span>
+                    </div>
+                     <div class="item">
+                        <span class="item-title">Extinctatlas......:</span>
+                        <span class="item-value">Interactive map of extinct aniamls with integrated AI. <a href="https://github.com/0xSKAMI/extinctatlas" target="_blank">project</a></span>
+                    </div>
                 </div>
 
-                <!-- myGames -->
-                <div class="project-item">
-                    <h3>myGames</h3>
-                    <p>front end of myGames project, this is made with react</p>
-                    <p class="language">JavaScript</p>
-                    <a href="https://github.com/skamiXD/myGames" target="_blank">View on GitHub</a>
+                <!-- CONTACT SECTION -->
+                <div id="contact" class="content-section">
+                    <h2>[ Contact Information ]</h2>
+                     <div class="item">
+                        <span class="item-title">Email..........:</span>
+                        <span class="item-value">saba.manchkhashvili23@gmail.com</span>
+                    </div>
+                     <div class="item">
+                        <span class="item-title">GitHub.........:</span>
+                        <span class="item-value"> <a href="https://github.com/0xSKAMI/" target="_blank">github.com/0xSKAMI</a></span>
+                    </div>
+                    <p>Feel free to reach out!<span class="cursor"></span></p>
                 </div>
-
-                <!-- quiz -->
-                <div class="project-item">
-                    <h3>quiz</h3>
-                    <p>just a 4 question test in python</p>
-                    <p class="language">Python</p>
-                    <a href="https://github.com/skamiXD/quiz" target="_blank">View on GitHub</a>
-                </div>
-
-                <!-- myGames-back-end -->
-                <div class="project-item">
-                    <h3>myGames-back-end</h3>
-                    <p>just back end of myGames project, i did this project to learn about uploading pics in s3 server btw</p>
-                    <p class="language">JavaScript</p>
-                    <a href="https://github.com/skamiXD/myGames-back-end" target="_blank">View on GitHub</a>
-                </div>
+                
 
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 skamiXD. All rights reserved.</p>
-    </footer>
-
+        </main>
+        
+        <footer>
+            <p>
+                <span class="key">ESC</span>: Exit    
+                <span class="key">↑↓</span>/<span class="key">TAB</span>: Select Item    
+                <span class="key">Click</span>: Select Menu
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
